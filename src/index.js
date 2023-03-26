@@ -4,11 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
+import { DoctorsInfo, LandingPage, NgoSearch,FindYourDoctor, NgoDetails, NgoSearch1, NgoSearchSpare, DoctorSearchDetails } from './components';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <App />
+    <LandingPage />
+    <DoctorsInfo />
+    <FindYourDoctor / >
+    <NgoDetails />
+    <NgoSearch / >
+    <NgoSearch1 / >
+    <DoctorSearchDetails />
+    <NgoSearchSpare />
+
   </Router>
 );
 

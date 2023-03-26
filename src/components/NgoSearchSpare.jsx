@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, TextField } from "@mui/material";
+import Background from './image/background.png'
 
 const NgoSearchSpare = () => {
   return (
@@ -130,7 +131,7 @@ const NgoSearchSpare = () => {
         <img
           className="absolute top-[0px] left-[0px] w-[1280px] h-[528px]"
           alt=""
-          src="/background1.svg"
+          src={Background}
         />
         <div className="absolute top-[calc(50%_-_225px)] left-[calc(50%_+_71px)] w-[505px] h-[429.45px]">
           <div className="absolute top-[calc(50%_-_214.73px)] left-[calc(50%_-_252.5px)] w-[505px] h-[335px]">

@@ -2,12 +2,13 @@ import React from "react";
 import { useCallback } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import Background from './image/background.png'
 
 const DoctorsSearchDetails = () => {
   const navigate = useNavigate();
 
   const onCtaClick = useCallback(() => {
-    navigate("/doctors-info");
+    navigate("/LandingPage");
   }, [navigate]);
 
   return (
@@ -16,7 +17,7 @@ const DoctorsSearchDetails = () => {
         <img
           className="absolute top-[0px] left-[0px] w-[1280px] h-[528px]"
           alt=""
-          src="/background1.svg"
+          src={Background}
         />
         <div className="absolute top-[calc(50%_-_225px)] left-[calc(50%_+_71px)] w-[505px] h-[429.45px] text-left">
           <div className="absolute top-[calc(50%_-_214.73px)] left-[calc(50%_-_252.5px)] w-[505px] h-[335px]">

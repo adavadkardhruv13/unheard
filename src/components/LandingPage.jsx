@@ -1,7 +1,13 @@
+import React from "react";
 import { useCallback } from "react";
 import { TextField, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import React from "react";
+import About from './image/about.png';
+import Hands from './image/hands.png';
+import Hands1 from './image/hands1.png';
+import Landpic from './image/landpic.png';
+import Background from './image/background.png';
+
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -40,15 +46,15 @@ const LandingPage = () => {
   return (
     <div className="relative bg-lavenderblush-200 w-full h-[4980px] overflow-hidden text-center text-45xl text-gray-200 font-montserrat">
       <img
-        className="absolute top-[3437.85px] left-[338.66px] w-[926.3px] h-[794.3px]"
-        alt=""
-        src="/lady.svg"
-      />
+        className="absolute top-[57.85px] left-[738.66px] w-[526.3px] h-[694.3px]"
+        alt="landpic"
+        src={Landpic}>
+        </img>
       <div className="absolute top-[4451.79px] left-[0px] w-[1280px] h-[528px]">
         <img
           className="absolute top-[0px] left-[0px] w-[1280px] h-[528px]"
           alt=""
-          src="/background.svg"
+          src={Background}
         />
         <div className="absolute top-[calc(50%_-_225px)] left-[calc(50%_+_71px)] w-[505px] h-[429.45px]">
           <div className="absolute top-[calc(50%_-_214.73px)] left-[calc(50%_-_252.5px)] w-[505px] h-[335px]">
@@ -59,10 +65,10 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="absolute top-[102px] left-[0px] w-[505px] h-[127px]">
-              <div className="absolute top-[0px] left-[0px] rounded-xl bg-lavenderblush-200 w-[505px] h-[127px]" />
+              <div className="absolute top-[0px] left-[0px] rounded-2xl bg-lavenderblush-200 w-[505px] h-[127px]" />
               <TextField
-                className="absolute top-[25px] left-[15px]"
-                sx={{ width: 425 }}
+                className="absolute top-[35px] left-[0px]"
+                sx={{ width: 450 }}
                 color="error"
                 variant="outlined"
                 multiline
@@ -72,9 +78,9 @@ const LandingPage = () => {
               />
             </div>
             <div className="absolute top-[291px] left-[0px] w-[505px] h-11">
-              <div className="absolute top-[0px] left-[0px] rounded-2xl bg-lavenderblush-200 w-[505px] h-11" />
+            <div className="absolute top-[0px] left-[0px] rounded-2xl bg-lavenderblush-200 w-[505px] h-[90px]" />
               <TextField
-                className="absolute top-[17px] left-[15px]"
+                className="absolute top-[17px] left-[0px]"
                 sx={{ width: 425 }}
                 color="error"
                 variant="outlined"
@@ -176,7 +182,7 @@ const LandingPage = () => {
           <img
             className="absolute top-[-1.8px] left-[-3.24px] w-[571.48px] h-[432.57px]"
             alt=""
-            src="/hands.svg"
+            src={Hands}
           />
         </div>
         <div className="absolute top-[calc(50%_-_539px)] left-[calc(50%_-_595.5px)] text-65xl font-semibold text-center text-red-100">
@@ -223,7 +229,7 @@ const LandingPage = () => {
         <img
           className="absolute top-[40.2px] left-[603.81px] w-[617px] h-[471.69px]"
           alt=""
-          src="/hands1.svg"
+          src={Hands1}
         />
       </div>
       <div className="absolute top-[calc(50%_-_1576px)] left-[calc(50%_-_579px)] w-[1150px] h-[560.79px] text-65xl">
@@ -236,7 +242,7 @@ const LandingPage = () => {
           <img
             className="absolute top-[-2.75px] left-[-4.07px] w-[492.83px] h-[424.29px]"
             alt=""
-            src="/illustration.svg"
+            src={About}
           />
           <div className="absolute top-[58px] left-[572px] w-[578px] h-[299px]">
             <div className="absolute top-[0px] left-[0px] w-[578px] h-[198px]">
@@ -258,31 +264,31 @@ const LandingPage = () => {
           alt=""
           src="/image@2x.png"
         />
-        <div className="absolute top-[17px] left-[332px] w-[668px] h-6 text-red-100 font-cabin">
+        <div className="absolute top-[17px] left-[332px] w-[668px] h-10 text-red-100 font-cabin">
           <div className="absolute top-[0px] left-[0px] flex flex-row items-start justify-center gap-[24px]">
             <Button
               className="relative"
-              variant="contained"
+              variant="lined"
               color="error"
               href="/landing-page"
             >
               Home
             </Button>
-            <Button className="relative" variant="contained" color="error">
+            <Button className="relative font-semibold " variant="lined" color="error"  >
               About Us
             </Button>
-            <Button className="relative" variant="contained" color="error">
+            <Button className="relative font-semibold " variant="lined" color="error"  href="/FinfYourDoctor">
               Help Support
             </Button>
-            <div className="relative font-semibold [backdrop-filter:blur(4px)]">
+            <Button className="relative font-semibold [backdrop-filter:blur(4px)]" variant="lined" color="error">
               Health Support
-            </div>
-            <div className="relative font-semibold [backdrop-filter:blur(4px)]">
+              </Button>
+            <Button className="relative font-semibold [backdrop-filter:blur(4px)]" variant="lined" color="error">
               Features
-            </div>
-            <div className="relative font-semibold [backdrop-filter:blur(4px)]">
+            </Button>
+            <Button className="relative font-semibold [backdrop-filter:blur(4px)]" variant="lined" color="error">
               Contact Us
-            </div>
+            </Button>
           </div>
         </div>
         <div className="absolute top-[132px] left-[30px] w-[673px] h-[329px] text-59xl">
@@ -331,9 +337,9 @@ const LandingPage = () => {
           className="absolute top-[507px] left-[30px] w-[775.02px] h-[216px] cursor-pointer text-left text-9xl"
           onClick={onDialogBoxContainerClick}
         >
-          <div className="absolute top-[0px] left-[0px] w-[775.02px] h-[216px]">
-            <div className="absolute top-[0px] left-[0px] rounded-t-mini rounded-b-none bg-lavenderblush-100 [backdrop-filter:blur(4px)] w-[775.02px] h-[216px]" />
-            <div className="absolute top-[64.54px] left-[0px] shadow-[0px_2px_3px_rgba(218,_27,_27,_0.75)] box-border w-[775px] h-0 border-t-[1px] border-solid border-crimson-200" />
+          <div className="absolute top-[0px] left-[0px] w-[75.02px] h-[216px]">
+            <div className="absolute top-[0px] left-[0px] rounded-t-mini rounded-b-none bg-lavenderblush-100 [backdrop-filter:blur(4px)] w-[675.02px] h-[216px]" />
+            <div className="absolute top-[64.54px] left-[0px] shadow-[0px_2px_3px_rgba(218,_27,_27,_0.75)] box-border w-[675px] h-0 border-t-[1px] border-solid border-crimson-200" />
           </div>
           <div className="absolute top-[12px] left-[19px] font-medium flex items-center w-[583px] h-[34px]">
             Describe your problem here -
