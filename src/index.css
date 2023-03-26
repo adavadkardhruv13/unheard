@@ -15,3 +15,8 @@ body {
 ::after {
   border-width: 0;
 }
+
+html,
+body{
+  scroll-behavior: smooth;
+}
