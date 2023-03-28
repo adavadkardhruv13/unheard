@@ -1,6 +1,7 @@
 import React from "react";
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import Handshealth from './images/handshealth.png';
 
 const HealthSupportContainer = () => {
   const navigate = useNavigate();
@@ -50,13 +51,13 @@ const HealthSupportContainer = () => {
         <img
           className="relative w-[571.48px] h-[432.57px] shrink-0"
           alt=""
-          src="/hands.svg"
+          src={Handshealth}
         />
-        <div className="w-[578px] h-[299px] shrink-0 flex flex-col items-start justify-start gap-[48px]">
+        <div className="w-[578px] h-[499px] shrink-0 flex flex-col items-start justify-start gap-[48px]">
           <div className="w-[578px] h-[198px] shrink-0 flex flex-col items-start justify-start gap-[24px]">
-            <div className="relative font-medium flex items-center w-[578px]">{`Lorem ipsum dolor sit amet. Est voluptatem culpa ut iste voluptas aut dolore repudiandae. Non similique totam `}</div>
-            <div className="relative font-medium flex items-center w-[541.58px]">{`Lorem ipsum dolor sit amet. Est voluptatem culpa ut iste voluptas aut dolore repudiandae. Non similique totam `}</div>
-          </div>
+            <div className="relative font-medium flex items-center w-[541.58px]">{`Get the healthcare support & consultation you need, without the hassle. Our platform provides a safe and confidential space for you to describe your health concerns and connect with doctors free of charge `}</div>
+          </div>            <div className="relative font-medium flex items-center w-[578px]">{`Don't let fear or uncertainty hold you back from prioritising your well-being. Join us today and take the first step towards a healthier, happier you.`}</div>
+
           <div
             className="relative w-64 h-[53px] shrink-0 cursor-pointer text-center text-white"
             onClick={onLearnMoreContainerClick}

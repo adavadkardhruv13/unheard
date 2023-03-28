@@ -1,6 +1,8 @@
 import React from "react";
 import { useMemo } from "react";
 import { TextField } from "@mui/material";
+import Background from'./images/background.png'
+
 
 const FooterTextareaContainer = ({ sendTop, onFrameContainer1Click }) => {
   const footerStyle = useMemo(() => {
@@ -17,7 +19,7 @@ const FooterTextareaContainer = ({ sendTop, onFrameContainer1Click }) => {
       <img
         className="absolute top-[0px] left-[0px] w-[1280px] h-[528px]"
         alt=""
-        src="/background1.svg"
+        src={Background}
       />
       <div className="absolute top-[39px] left-[71px] w-[265px] h-[85.06px]">
         <div className="absolute top-[0px] left-[55px] font-semibold">h</div>

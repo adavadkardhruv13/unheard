@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import VoiceContainer from "../component/VoiceContainer";
 import { useNavigate } from "react-router-dom";
 import MessageContainer from "../component/MessageContainer";
+import Backarrow from './images/backarrow.png'
 
 const ChatInterface = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ const ChatInterface = () => {
         <img
           className="absolute top-[55px] left-[845px] w-[586px] h-[701px] object-cover"
           alt=""
-          src="/image@2x.png"
+          src={Backarrow}
         />
         <div className="absolute top-[583px] left-[0px] w-[420px] h-[53px]">
           <div className="absolute top-[0px] left-[211px] w-[209px] h-[53px]">

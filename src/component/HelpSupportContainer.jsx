@@ -1,6 +1,7 @@
 import React from "react";
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import Handshelp from './images/handshelp.png';
 
 const HelpSupportContainer = () => {
   const navigate = useNavigate();
@@ -52,9 +53,8 @@ const HelpSupportContainer = () => {
         </div>
         <div className="absolute top-[0px] left-[0px] w-[660px] h-[239px] text-left text-black">
           <div className="absolute top-[0px] left-[0px] font-medium flex items-center w-[660px] h-[116px]">
-            Lorem ipsum dolor sit amet. Est voluptatem culpa ut iste voluptas
-            aut dolore repudiandae. Non similique totam voluptatem culpa ut iste
-            voluptas aut dolore repudiandae
+          We understand that reaching out for our problems can be uncomfortable. Our platform is dedicated to providing a safe and confidential space for you to share your problems and receive the support you need.
+
           </div>
           <div className="absolute top-[123px] left-[0px] font-medium flex items-center w-[660px] h-[116px]">{`Lorem ipsum dolor sit amet. Est voluptatem culpa ut iste voluptas aut dolore repudiandae. Non similique totam `}</div>
         </div>
@@ -72,7 +72,7 @@ const HelpSupportContainer = () => {
       <img
         className="absolute top-[29.99px] left-[603.81px] w-[617px] h-[471.69px]"
         alt=""
-        src="/hands1.svg"
+        src={Handshelp}
       />
     </div>
   );

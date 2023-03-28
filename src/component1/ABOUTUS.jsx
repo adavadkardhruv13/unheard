@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import UnheardContainer from "../component/UnheardContainer";
 import FooterTextareaContainer from "../component/FooterTextareaContainer";
 import ContributorsContainer from "../component/ContributorsContainer";
+import About from './images/about.png'
 
 const ABOUTUS = () => {
   const navigate = useNavigate();
@@ -32,13 +33,13 @@ const ABOUTUS = () => {
       <img
         className="absolute top-[102.85px] left-[419.66px] w-[810.45px] h-[698.3px]"
         alt=""
-        src="/bg-illustration.svg"
+        src=''
       />
       <UnheardContainer />
       <img
         className="absolute top-[1329px] left-[1069px] w-[38px] h-[38px]"
         alt=""
-        src="/ellipse-4.svg"
+        src={About}
       />
       <FooterTextareaContainer
         onFrameContainer1Click={onFrameContainer1Click}
@@ -77,7 +78,7 @@ const ABOUTUS = () => {
       <img
         className="absolute top-[1318px] left-[1069px] w-[38px] h-[38px]"
         alt=""
-        src="/ellipse-41.svg"
+        src={About}
       />
     </div>
   );

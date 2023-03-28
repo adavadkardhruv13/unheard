@@ -3,6 +3,9 @@ import React from "react";
 import VoiceContainer from "../component/VoiceContainer";
 import { useNavigate } from "react-router-dom";
 import MessageContainer from "../component/MessageContainer";
+import Plus from "./images/plus.png"
+import Icons8paperplane from "./images/icons8paperplane.png"
+import Backarrow from "./images/backarrow.png"
 
 const ChatInterface1 = () => {
   const navigate = useNavigate();
@@ -21,7 +24,7 @@ const ChatInterface1 = () => {
         <img
           className="absolute top-[55px] left-[845px] w-[586px] h-[701px] object-cover"
           alt=""
-          src="/image@2x.png"
+          src={Backarrow}
         />
         <div className="absolute top-[583px] left-[0px] w-[420px] h-[53px]">
           <textarea className="[border:none] bg-[transparent] font-semibold font-montserrat text-5xl absolute top-[0px] left-[211px] w-[209px] h-[53px]" />
@@ -99,13 +102,13 @@ const ChatInterface1 = () => {
           <img
             className="absolute top-[16px] left-[1001px] w-7 h-7 object-cover"
             alt=""
-            src="/icons8paperplane100-1@2x.png"
+            src={Icons8paperplane}
           />
           <div className="absolute top-[10px] left-[13px] rounded-6xl bg-lavenderblush-100 [backdrop-filter:blur(4px)] w-[35px] h-[35px]" />
           <img
             className="absolute top-[13px] left-[17px] w-7 h-7"
             alt=""
-            src="/plus1.svg"
+            src={Plus}
           />
         </div>
         <div className="absolute top-[464px] left-[1037px] rounded-mini bg-pink-300 w-[9px] h-[130px]" />

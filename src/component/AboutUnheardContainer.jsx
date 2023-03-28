@@ -1,6 +1,8 @@
 import React from "react";
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import About from './images/about.png'
+  
 
 const AboutUnheardContainer = () => {
   const navigate = useNavigate();
@@ -26,7 +28,7 @@ const AboutUnheardContainer = () => {
         <img
           className="absolute top-[-2.75px] left-[-4.07px] w-[492.82px] h-[424.29px]"
           alt=""
-          src="/illustration.svg"
+          src={About}
         />
         <div className="absolute top-[58px] left-[572px] w-[578px] h-[299px]">
           <div className="absolute top-[0px] left-[0px] w-[578px] h-[198px]">

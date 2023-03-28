@@ -1,6 +1,9 @@
 import React from "react";
 import { useCallback } from "react";
 import ContactForm from "./ContactForm";
+import Background from'./images/background.png'
+
+
 
 const FooterTextareaContainer1 = () => {
   const onHomeTextClick = useCallback(() => {
@@ -43,7 +46,7 @@ const FooterTextareaContainer1 = () => {
       <img
         className="absolute top-[0px] left-[0px] w-[1280px] h-[528px]"
         alt=""
-        src="/background.svg"
+        src={Background}
         data-scroll-to="background"
       />
       <div className="absolute top-[43px] left-[711px] w-[505px] h-[400.47px]">

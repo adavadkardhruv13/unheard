@@ -1,4 +1,6 @@
 import React from "react";
+import Icons8paperplane from './images/icons8paperplane.png';
+import Backarrow from "./images/backarrow.png"
 const ChatContainer = ({ dimensionsText }) => {
     return (
       <div className="absolute top-[146px] left-[748px] w-[343px] h-[535px] text-left text-xs text-white font-montserrat">
@@ -88,12 +90,12 @@ const ChatContainer = ({ dimensionsText }) => {
           <img
             className="absolute top-[7px] left-[305.57px] w-[10.29px] h-[10.79px] object-cover"
             alt=""
-            src="/icons8paperplane100-11@2x.png"
+            src={Icons8paperplane}
           />
           <img
             className="absolute top-[6px] left-[4.12px] w-[12.35px] h-[12.35px]"
             alt=""
-            src={dimensionsText}
+            src={Backarrow}
           />
         </div>
       </div>
