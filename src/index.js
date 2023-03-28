@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import DoctorsInfo from './component1/DoctorsInfo';
 import ABOUTUS from './component1/ABOUTUS';
 import LandingPage from './component1/LandingPage';
@@ -31,16 +30,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
   <Router>
-    <LandingPage />
-    < VIDEOCALL />
-    < VIDEOCALL1 />
-    < VIDEOCALL2 />
-    < VIDEOCALL3 />
-    < VIDEOCALL4 />
-    < VIDEOCALL5 />
-    < VIDEOCALL6 />
-    < VIDEOCALL7/>
-    < VIDEOCALL8 />
+    <Routes>
+      <Route path='/' element={
+        <>
+            <LandingPage />
+        </>
+      }></Route>
+    </Routes>
     <NgoSearch/>
     <NgoSearchSpare1 />
     <ChatDoc />
@@ -60,7 +56,3 @@ root.render(
   
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
