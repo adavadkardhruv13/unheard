@@ -116,9 +116,10 @@ const FindYourDoctor = () => {
                 alt=""
                 src="/rectangle-43.svg"
               />
-              <div className="absolute top-[25px] left-[67px] font-medium flex items-center w-[87px] h-[19px]">
+              <div className="absolute top-[-2px] left-[0px] flex items-center t rounded-3041xl bg-red-100 box-border w-60 h-[57px] " >
                 Search
               </div>
+              
             </div>
           </div>
           <div className="absolute top-[26px] left-[56px] w-[197px] h-[63px] text-33xl text-gray-200">

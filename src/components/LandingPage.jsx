@@ -250,7 +250,7 @@ const LandingPage = () => {
               <div className="absolute top-[0px] left-[0px] font-medium flex items-center w-[578px]">{`Lorem ipsum dolor sit amet. Est voluptatem culpa ut iste voluptas aut dolore repudiandae. Non similique totam `}</div>
             </div>
             <div className="absolute top-[246px] left-[0px] w-[200.33px] h-[53px] text-center text-white">
-              <div className="absolute top-[-2px] left-[-2px] rounded bg-red-100 box-border w-[204.33px] h-[57px] border-[2px] border-solid border-white" />
+              <div className="absolute top-[-2px] left-[-2px] ]rounded bg-red-100 box-border w-[204.33px h-[57px] border-[2px] border-solid border-white" />
               <div className="absolute top-[12px] left-[30px] font-semibold">
                 Learn More
               </div>
@@ -274,7 +274,7 @@ const LandingPage = () => {
             >
               Home
             </Button>
-            <Button className="relative font-semibold " variant="lined" color="error"  >
+            <Button className="relative font-semibold " variant="lined" color="error" href = "/NgoSearch" >
               About Us
             </Button>
             <Button className="relative font-semibold " variant="lined" color="error"  href="/FinfYourDoctor">
